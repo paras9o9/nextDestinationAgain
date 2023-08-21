@@ -4,13 +4,14 @@ import Hero from './components/Hero';
 import About from './components/whoWeAre';
 import Feedbacks from './components/Feedbacks'
 import Loading from './components/destination/Loading';
-import Tours from './components/destination/Tours';
+import Destinations from './components/destination/Destinations';
+import Priceing from './components/Priceing';
 const url = 'https://course-api.com/react-tours-project'
 const App = () => {
   const [loading, setLoading] = useState(true);
   const [destination, setDestination] = useState([]);
   const removeTour = (id) => {
-    const newTours = destination.filter((tour) => tour.id === id)
+    const newTours = destination.filter((tour) => tour.id !== id)
     setDestination(newTours)
   }
   const fetchTours = async () => {
@@ -20,7 +21,7 @@ const App = () => {
       const destination = await response.json();
       setLoading(false)
       setDestination(destination)
-      console.log(destination);
+      // console.log(destination);
     } catch (error) {
       setLoading(false)
       console.log(error);
@@ -54,7 +55,8 @@ const App = () => {
         <Hero />
         <About />
         <Feedbacks />
-        <Tours destinations={destination} removeTour={removeTour} />
+        <Destinations destinations={destination} removeTour={removeTour} />
+        <Priceing />
     </div>
   )
 }

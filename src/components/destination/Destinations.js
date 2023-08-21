@@ -1,8 +1,8 @@
 import React from 'react';
-import Tour from './Tour';
+import Tour from './Destiantion';
 
 const Tours = ({ removeTour, destinations}) => {
-    console.log(destinations);
+    // console.log(destinations);
   return (
     <section className='destination-section'>
         <div className='destination-title'>

@@ -397,6 +397,7 @@
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
 }
+
 /* Destination */
 /*
 =============== 
@@ -500,6 +501,7 @@ p {
   margin-top: 2rem;
   font-size: 1.2rem;
 }
+
 /*
 =============== 
 Tours
@@ -508,11 +510,13 @@ Tours
 .loading {
   text-align: center;
 }
+
 .destination-title {
   text-align: center;
   margin-bottom: 4rem;
   font-size: 2rem;
 }
+
 .destination-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -520,6 +524,7 @@ Tours
   gap: 1em;
   padding: 0 1.5em;
 }
+
 .destination-tour {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -528,9 +533,11 @@ Tours
   transition: var(--transition);
   border: 2px solid yellow;
 }
+
 .destination-tour:hover {
   box-shadow: var(--dark-shadow);
 }
+
 .destination-tour img {
   width: 100%;
   height: 20rem;
@@ -538,15 +545,18 @@ Tours
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
 }
+
 .destination-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
 .destination-info h4 {
   margin-bottom: 0;
 }
+
 .destination-tour button {
   background: transparent;
   border-color: transparent;
@@ -556,15 +566,18 @@ Tours
   cursor: pointer;
   padding-left: 0.25rem;
 }
+
 .destination-price {
   color: var(--clr-primary-5);
   background: var(--clr-primary-10);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
 }
+
 .destination-tour footer {
   padding: 1.5rem 2rem;
 }
+
 .destination-tour .delete-btn {
   display: block;
   width: 200px;
@@ -575,4 +588,64 @@ Tours
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+}
+
+/* Price */
+.priceing-section {
+  min-height: 595px;
+}
+
+.priceing-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+.priceing-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border: 2px solid chartreuse;
+}
+.priceing-table-container, .destiantion-page {
+  margin: 0 1em;
+  border: 2px solid firebrick;
+  padding: 1.5em;
+}
+.destination-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.priceing table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235, 235, 235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250, 250, 250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245, 245, 245);
+}
+
+caption {
+  padding: 10px;
 }
