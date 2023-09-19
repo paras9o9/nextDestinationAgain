@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
-import feedbacks from '../data.json'
+import feedbacks from '../../data.json'
 
 const Feedbacks = () => {
   const {id, name, image, job, text } = feedbacks;

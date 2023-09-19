@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
+import { StyledFeedback } from "../styles/feedback.styled";
 
 const Feebackss = () => {
   const [feedbacks, setFeedbacks] = useState([]);
-  // console.log(feedbacks);
+  console.log(feedbacks);
   const [index, setIndex] = useState(0);
   useEffect(() => {
     // Other Apporach for fetch API
@@ -16,7 +17,7 @@ const Feebackss = () => {
         const request = new Request(requestUrl);
         setFeedbacks([]);
         const responses = await fetch(request);
-        const result = await responses.json();        
+        const result = await responses.json();
         setFeedbacks(result);
       } catch (error) {
         console.log(error);
@@ -31,7 +32,7 @@ const Feebackss = () => {
     //   console.log(error);
     // }
   }, []);
-    const { id, name, job, image, text } = feedbacks[index] || {};
+  const { id, name, job, image, text } = feedbacks[index] || {};
 
   const checkNumber = (number) => {
     if (number > feedbacks.length - 1) {
@@ -62,7 +63,7 @@ const Feebackss = () => {
     setIndex(checkNumber(randomNumber));
   };
   return (
-    <div>
+    <StyledFeedback>
       <section className="feedback-section">
         <div className="feedback-title">
           <h2>Our Review</h2>
@@ -85,10 +86,12 @@ const Feebackss = () => {
               <FaChevronRight />
             </button>
           </div>
-          <button className="random-btn" onClick={randomPerson}>surprise me</button>
+          <button className="random-btn" onClick={randomPerson}>
+            surprise me
+          </button>
         </article>
       </section>
-    </div>
+    </StyledFeedback>
   );
 };
 

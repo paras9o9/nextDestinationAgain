@@ -1,43 +1,73 @@
 import React from "react";
+import { HeaderStyled } from "./styles/Hero.styled";
+import { Container } from "./styles/Container.styled";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <div>
-      <section className="hero-section">
-        <div className="hero">
-          <div className="hero-heading">
-            <h1>Next Destination</h1>
-          </div>
-          <div className="hero-content">
-            <p className="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              rutrum sollicitudin nulla, non commodo tellus porta non. Etiam
-              orci ipsum, semper ac libero eget, sagittis vehicula nisi. Nam
-              volutpat massa quis vulputate porttitor. Suspendisse at ante
-              lobortis tortor dictum maximus ut sed tortor. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Nulla egestas finibus nulla
-              quis dignissim. Pellentesque tristique, libero ac egestas
-              eleifend, dolor ipsum mattis magna, sit amet dignissim sapien enim
-              quis felis. Nunc purus purus, efficitur in arcu eu, facilisis
-              auctor odio. Donec viverra, libero in hendrerit auctor, magna eros
-              suscipit nisi, eu commodo sapien ante vel tortor. Ut in posuere
-              sapien, sit amet lobortis mi. Praesent viverra fermentum pharetra.
-              Morbi rutrum tincidunt rhoncus. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos.
-              Aliquam dui mi, viverra a porta at, rhoncus at nunc. Curabitur
-              consectetur nisl et tellus mattis, nec auctor sapien rutrum.
-              Quisque lobortis odio nec ultrices pharetra. Vestibulum felis
-              enim, placerat vitae aliquet ut, sagittis id velit. Sed ac arcu
-              vel nunc commodo vehicula. Cras lacus nibh, lacinia nec justo a,
-              fermentum pretium mi. Praesent sit amet vulputate velit. Integer
-              dictum mauris vel nibh mattis, nec pretium diam pellentesque.
-              Curabitur in lacinia elit.
-            </p>
-            <a href="#">Explore</a>
+    <HeaderStyled>
+      <Container>
+        <div class="hero-section" imgUrl="../assest/bg-img-jpg">
+          <Navbar />
+          <div class="hero-section-content">
+            <div class="hero-content">
+              <div class="hero-text">
+                Documenting the very best in food and travel.
+              </div>
+              <div class="explore-btn">
+                <a href="#"> Explore </a>
+              </div>
+            </div>
+            <div class="hero-cards-container">
+              <div class="hero-card">
+                <div class="hero-img-container">
+                  <img
+                    src="https://picsum.photos/id/93/600/600
+              "
+                    alt=""
+                    class="img"
+                  />
+                </div>
+                <div class="hero-card-content">
+                  <p class="hero-card-date">Sep 5, 2023</p>
+                  <p class="hero-card-heading">Aenean eu leo Quam</p>
+                  <p class="hero-card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    officia cumque aliquam laboriosam.
+                  </p>
+                  <div class="read-more">
+                    <a href="#">read more</a>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-card">
+                <div class="hero-img-container">
+                  <img
+                    src="https://picsum.photos/id/176/600/600
+              "
+                    alt=""
+                    class="img"
+                  />
+                </div>
+                <div class="hero-card-content">
+                  <p class="hero-card-date">Aug 29, 2023</p>
+                  <p class="hero-card-heading">Elit Condimentum</p>
+                  <p class="hero-card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam nobis aliquid. Lorem, ipsum.
+                  </p>
+                  <div class="read-more">
+                    <a href="#">read more</a>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Container>
+    </HeaderStyled>
   );
 };
 

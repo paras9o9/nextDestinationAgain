@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "one",
+      "text": "text"
+    },
+    {
+      "id": 2,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "two",
+      "text": "text"
+    },
+    {
+      "id": 3,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "three",
+      "text": "text"
+    },
+    {
+      "id": 4,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "four",
+      "text": "text"
+    },
+    {
+      "id": 5,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "five",
+      "text": "text"
+    },
+    {
+      "id": 6,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "six",
+      "text": "text"
+    },
+    {
+      "id": 7,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "seven",
+      "text": "text"
+    },
+    {
+      "id": 8,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "eight",
+      "text": "text"
+    },
+    {
+      "id": 9,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "nine",
+      "text": "text"
+    },
+    {
+      "id": 10,
+      "src": "https://picsum.photos/200/300",
+      "alt": "typicode",
+      "title": "ten",
+      "text": "text"
+    }
+  ]
+}
