@@ -41,7 +41,7 @@ const Navbar = () => {
             <FaBars />
           </button>
           <div class="logo">
-            <span>Your Site Title</span>
+            <span>nextDestination</span>
           </div>
         </div>
         <nav

@@ -66,9 +66,9 @@ const App = () => {
         <Feedbacks />
         {/* <Gallery /> */}
         {/* <Destinations destinations={destination} removeTour={removeTour} /> */}
-        <Priceing />
+        {/* <Priceing /> */}
         {/* <Contact /> */}
-        <Footer />
+        {/* <Footer /> */}
       </>
     </ThemeProvider>
   );

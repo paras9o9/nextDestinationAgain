@@ -12,7 +12,9 @@ const Hero = () => {
           <div class="hero-section-content">
             <div class="hero-content">
               <div class="hero-text">
-                Documenting the very best in food and travel.
+                <h1>
+                  Documenting the very best in food and travel.
+                </h1>
               </div>
               <div class="explore-btn">
                 <a href="#"> Explore </a>
@@ -24,7 +26,7 @@ const Hero = () => {
                   <img
                     src="https://picsum.photos/id/93/600/600
               "
-                    alt=""
+                    alt="card-img"
                     class="img"
                   />
                 </div>
@@ -33,7 +35,6 @@ const Hero = () => {
                   <p class="hero-card-heading">Aenean eu leo Quam</p>
                   <p class="hero-card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    officia cumque aliquam laboriosam.
                   </p>
                   <div class="read-more">
                     <a href="#">read more</a>
@@ -46,7 +47,7 @@ const Hero = () => {
                   <img
                     src="https://picsum.photos/id/176/600/600
               "
-                    alt=""
+                    alt="card-img"
                     class="img"
                   />
                 </div>
@@ -55,7 +56,6 @@ const Hero = () => {
                   <p class="hero-card-heading">Elit Condimentum</p>
                   <p class="hero-card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam nobis aliquid. Lorem, ipsum.
                   </p>
                   <div class="read-more">
                     <a href="#">read more</a>
